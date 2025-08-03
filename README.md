@@ -5,13 +5,13 @@ A highly customizable CAPTCHA generator using canvas in TypeScript.
 ## Installation
 
 ```bash
-npm install captcha-generator
+npm install @ddededodediamante/captcha-generator
 ```
 
 ## Usage
 
 ```ts
-import Captcha from 'captcha-generator';
+import Captcha from '@ddededodediamante/captcha-generator';
 import fs from 'fs';
 
 const captcha = new Captcha({
@@ -30,7 +30,7 @@ fs.writeFileSync('captcha.png', buffer);
 
 ## API
 
-### `new Captcha(options?: CaptchaOptions)`
+### `new Captcha(options?)`
 
 Creates a CAPTCHA generator with optional settings:
 
@@ -48,6 +48,6 @@ Creates a CAPTCHA generator with optional settings:
 | `noiseDots`      | `number` | `100`          | Number of random noise dots         |
 | `noiseColor`     | `string` | `#888888`      | Color for noise lines and dots      |
 
-### `generate(mime?: "image/png" | "image/webp" | "image/avif" | "image/jpeg", quality?: number): { text: string; buffer: Buffer }`
+### `generate(mime?, quality?)`
 
-Generates the CAPTCHA, returning the text and an image buffer.
+Generates the CAPTCHA, returns `{ text: string; buffer: Buffer }`.

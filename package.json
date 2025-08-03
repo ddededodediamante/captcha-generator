@@ -1,5 +1,5 @@
 {
-  "name": "captcha-generator",
+  "name": "@ddededodediamante/captcha-generator",
   "version": "1.0.0",
   "description": "Highly customizable captcha generator using canvas.",
   "main": "dist/index.js",
